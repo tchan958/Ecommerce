@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./javascript/scripts.js"></script>
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="/index.html" class="w3-bar-item w3-button w3-wide"><i class="fa-regular fa-glasses"></i>CÜ</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="/product.html" class="w3-bar-item w3-button">PRODUCTS</a>
+                <a href="#" class="w3-bar-item w3-button">ABOUT</a>
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+                <a href="/user.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>REGISTER</a>
+                <a href="/login.html" class="w3-bar-item w3-button"><i
+                        class="fa-regular fa-right-to-bracket"></i></i>LOGIN</a>
+                <a href="/checkout.html" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"
+                        style="font-size:24px"></i></a>
+
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+        </a>
+        <a href="/product.html" onclick="w3_close()" class="w3-bar-item w3-button">PRODUCTS</a>
+        <a href="" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+        <a href="/user.html" onclick="w3_close()" class="w3-bar-item w3-button">REGISTER</a>
+        <a href="/login.html" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+        <a href="/checkout.html" onclick="w3_close()" class="w3-bar-item w3-button"></a>
+    </nav>
+
+    <!-- Glasses Section -->
+    <div class="w3-container" style="padding:128px 16px" id="work">
+        <h3 class="w3-center">OUR MOST POPULAR</h3>
+        <p class="w3-center w3-large">What everyone is hyped about!</p>
+
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-col l3 m6">
+                <img src="/images/glasses1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Picture 1">
+                    <center>
+                        <ul style="list-style: none;">
+                            <li>$55</li>
+                            <li>Thick Black Frame</li>
+                           </ul>
+                    </center>
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="/images/glasses2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Picture 2">
+                    <center>
+                        <ul style="list-style: none;">
+                            <li>$85</li>
+                            <li>Elliot Frame</li>
+                           </ul>
+                    </center>
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="/images/glasses3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Picture 3">
+                    <center>
+                        <ul style="list-style: none;">
+                            <li>$70</li>
+                            <li>Korean Style Frame</li>
+                           </ul>
+                    </center>
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="/images/glasses4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Picture 4">
+                    <center>
+                        <ul style="list-style: none;">
+                            <li>$45</li>
+                            <li>Zenni Frame</li>
+                           </ul>
+                    </center>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col l3 m6">
+                <img src="/images/glasses5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Picture 5">
+                    <center>
+                        <ul style="list-style: none;">
+                            <li>$35</li>
+                            <li>Rectangle Black Frame</li>
+                           </ul>
+                    </center>
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="/images/glasses6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Picture 6">
+                    <center>
+                        <ul style="list-style: none;">
+                            <li>$45</li>
+                            <li>White Frame</li>
+                           </ul>
+                    </center>
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="/images/glasses7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Picture 7">
+                    <center>
+                        <ul style="list-style: none;">
+                            <li>$40</li>
+                            <li>Thin Standard Frame</li>
+                           </ul>
+                    </center>
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="/images/glasses8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Picture 8">
+                    <center>
+                        <ul style="list-style: none;">
+                            <li>$75</li>
+                            <li>Gold Korean Style Frame</li>
+                           </ul>
+                    </center>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
