@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Checkout Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./javascript/scripts.js"></script>
+</head>
+
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="/index.html" class="w3-bar-item w3-button w3-wide"><i class="fa-regular fa-glasses"></i>CÜ</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="/product.html" class="w3-bar-item w3-button">PRODUCTS</a>
+        <a href="#" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a href="/user.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>REGISTER</a>
+        <a href="/login.html" class="w3-bar-item w3-button"><i class="fa-regular fa-right-to-bracket"></i></i>LOGIN</a>
+        <a href="/checkout.html" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"
+            style="font-size:24px"></i></a>
+
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+    </a>
+    <a href="/product.html" onclick="w3_close()" class="w3-bar-item w3-button">PRODUCTS</a>
+    <a href="" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="/user.html" onclick="w3_close()" class="w3-bar-item w3-button">REGISTER</a>
+    <a href="/login.html" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+    <a href="/checkout.html" onclick="w3_close()" class="w3-bar-item w3-button"></a>
+  </nav>
+
+  <div class='container'>
+    <div class='window'>
+      <div class='order-info'>
+        <div class='order-info-content'>
+          <h2>Order Summary</h2>
+          <div class='line'></div>
+          <table class='order-table'>
+            <tbody>
+              <tr>
+                <td><img src='/images/glasses1.jpg' class='full-width'></img>
+                </td>
+                <td>
+                  <br> <span class='thin'>Thick Black Frame</span>
+                  <br> <span class='thin small'> Color: Black<br></span>
+                </td>
+
+              </tr>
+              <tr>
+                <td>
+                  <div class='price'>$55</div>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+          <div class='line'></div>
+          <table class='order-table'>
+            <tbody>
+              <tr>
+                <td><img src='/images/glasses2.jpg' class='full-width'></img>
+                </td>
+                <td>
+                  <br> <span class='thin'>Elliot Frame</span>
+                  <br> <span class='thin small'> Color: Black<br></span>
+                </td>
+
+              </tr>
+              <tr>
+                <td>
+                  <div class='price'>$85</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class='line'></div>
+          <table class='order-table'>
+            <tbody>
+              <tr>
+                <td><img src='/images/glasses3.jpg' class='full-width'></img>
+                </td>
+                <td>
+                  <br> <span class='thin'>Korean Style Frame</span>
+                  <br> <span class='thin small'> Color: Gold<br></span>
+                </td>
+
+              </tr>
+              <tr>
+                <td>
+                  <div class='price'>$70</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class='line'></div>
+          <div class='total'>
+            <span style='float:left;'>
+              <div class='thin dense'>Tax 10%</div>
+              <div class='thin dense'>Delivery</div>
+              TOTAL
+            </span>
+            <span style='float:right; text-align:right;'>
+              <div class='thin dense'>$21</div>
+              <div class='thin dense'>$20</div>
+              $251
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class='credit-info'>
+        <div class='credit-info-content'>
+          <table class='half-input-table'>
+            <tr>
+              <td>Please select your card: </td>
+              <td>
+                <div class='dropdown' id='card-dropdown'>
+                  <div class='dropdown-btn' id='current-card'>Visa</div>
+                  <div class='dropdown-select'>
+                    <ul>
+                      <li>Master Card</li>
+                      <li>American Express</li>
+                    </ul>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80'
+            class='credit-card-image' id='credit-card-image'></img>
+          Card Number
+          <input class='input-field'></input>
+          Card Holder
+          <input class='input-field'></input>
+          <table class='half-input-table'>
+            <tr>
+              <td> Expires
+                <input class='input-field'></input>
+              </td>
+              <td>CVC
+                <input class='input-field'></input>
+              </td>
+            </tr>
+          </table>
+          <button class='pay-btn'>Checkout</button>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
